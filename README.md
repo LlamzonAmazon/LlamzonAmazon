@@ -10,10 +10,10 @@
   - This project is both very educational for me and impactful to the PlanCatalyst organization, helping them help others.
 - I'm in in the **cybersecurity** field as an analyst, and I'm looking to bridge my experience with my skills in software development.
 - I am VP Projects at Western AI, overseeing four distinct ML-focused project teams each led by a resepective Project Manager.
-  - ***Shotgun Guardian*** – Driver Drowsiness Detector with OpenCV
-  - ***ClipFarm*** – Short-form Video Virality Analyzer with CLIP and OpenL3
+  - ***Shotgun Guardian*** – Driver Drowsiness Detector with `OpenCV`
+  - ***ClipFarm*** – Short-form Video Virality Analyzer with `CLIP` and `OpenL3`
   - ***Affordcast*** – Toronto Condominium Affordability Forecaster with `scikit-learn`
-  - ***CodeBuster*** – *Code-similarity Detector** with `CodeBERT`
+  - ***CodeBuster*** – Code-similarity Detector with `CodeBERT`
 
 ---
 
