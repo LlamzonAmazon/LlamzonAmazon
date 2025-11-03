@@ -12,7 +12,7 @@
 - I am also **Vice President of Projects at Western AI** where I oversee four distinct ML project teams each respectively led by a Project Manager. The projects include:
   - ***[Shotgun Guardian](https://github.com/Western-Artificial-Intelligence/realtime-drowsiness-detector)*** – Driver Drowsiness Detector with `OpenCV`,`YOLOv8n`, and `PyTorch`
   - ***[ClipFarm](https://github.com/Western-Artificial-Intelligence/video-virality-predictor)*** – Short-form Video Virality Analyzer with `CLIP`, `OpenL3`, and `PyTorch`
-  - ***[Affordcast](https://github.com/Western-Artificial-Intelligence/condo-cost-predictor)*** – Toronto Condominium Affordability Forecaster with `XGBoost`, `LightGBM`, and `scikit-learn`
+  - ***[Affordcast](https://github.com/Western-Artificial-Intelligence/condo-cost-predictor)*** – Toronto Condo-Affordability Forecaster with `XGBoost`, `LightGBM`, and `scikit-learn`
   - ***[CodeBuster](https://github.com/Western-Artificial-Intelligence/codesim-detector)*** – Code-similarity Detector with `CodeBERT` and `scikit-learn`
 
 ---
