@@ -5,19 +5,29 @@
 ---
 
 ### 🔭 What I'm doing
-- My main project right now is building the [***Data Dashboard***](https://github.com/LlamzonAmazon/PC-Data-Dash) for [**PlanCatalyst**](https://www.plancatalyst.org) which forecasts country development with regression modelling on human rights growth (UN SDGs), climate change resilience (ND-GAIN), and financial capacity (World Bank data).
-  - I'm building my skills with **ML tools/frameworks** and **Amazon Web Services (AWS)** with this project.
-  - The dashboard improves PlanCatalyst's stakeholders' trust and perception of their data-driven decision-making capabilities, helping the organization grow their international impact.
-- I'm in in the **cybersecurity** field as an analyst, and I'm looking to bridge this experience with my skills in **software development** and passion for **cloud systems**.
-- I am also completing my thesis, titled: *Asynchronous Shallow-Deep Layer Split Updates for More Efficient Federated Learning Networks in IoT Health Devices*
-  - I am also building my skills with ML tools/frameworks with this project.
-- I am also **Vice President of Projects at Western AI** where I oversee four distinct ML project teams each respectively led by a Project Manager. The projects include:
-  - ***[Shotgun Guardian](https://github.com/Western-Artificial-Intelligence/realtime-drowsiness-detector)*** – Driver Drowsiness Detector with `OpenCV`,`YOLOv8n`, and `PyTorch`
-  - ***[ClipFarm](https://github.com/Western-Artificial-Intelligence/video-virality-predictor)*** – Short-form Video Virality Analyzer with `CLIP`, `OpenL3`, and `PyTorch`
-  - ***[Affordcast](https://github.com/Western-Artificial-Intelligence/condo-cost-predictor)*** – Toronto Condo-Affordability Forecaster with `XGBoost`, `LightGBM`, and `scikit-learn`
-  - ***[CodeBuster](https://github.com/Western-Artificial-Intelligence/codesim-detector)*** – Code-similarity Detector with `CodeBERT` and `scikit-learn`
 
-Needless to say, I have a fair amount of work on my hands right now.
+#### 🌎 PlanCatalyst Global Development Data Dashboard
+My main project right now is building an interactive web-dashboard ([GitHub](https://github.com/LlamzonAmazon/PC-Data-Dash)) for the *PlanCatalyst Organization* ([Website](https://www.plancatalyst.org)) which forecasts country development with regression modelling on:
+ - human rights growth (UN SDGs),
+ - climate change resilience (ND-GAIN),
+ - and financial capacity (World Bank data).
+
+I'm building my skills with **ML tools/frameworks** and **Amazon Web Services (AWS)** with this project. The dashboard improves PlanCatalyst's stakeholders' trust and perception of their data-driven decision-making capabilities, helping the organization grow their international impact.
+
+#### 🛜 Optimizing Federated Learning Networks for IoT Health Devices
+I am also completing my thesis, titled: 
+
+*Asynchronous Shallow-Deep Layer Split Updates for More Efficient Federated Learning Networks in IoT Health Devices*
+ 
+#### 📡 Part-Time Cybersecurity Analyst (SOC)
+I'm in in the **cybersecurity** field as an analyst, and I'm looking to bridge this experience with my skills in **software development** and passion for **cloud systems**.
+ 
+#### 🤖 Western AI – Vice President of Projects
+I am also involved in Western's largest tech club where I oversee four distinct ML project teams each respectively led by a Project Manager. The projects include:
+  - ***Shotgun Guardian*** ([GitHub](https://github.com/Western-Artificial-Intelligence/realtime-drowsiness-detector)) – Driver Drowsiness Detector with `OpenCV`,`YOLOv8n`, and `PyTorch`
+  - ***ClipFarm*** ([GitHub](https://github.com/Western-Artificial-Intelligence/video-virality-predictor)) – Short-form Video Virality Analyzer with `CLIP`, `OpenL3`, and `PyTorch` 
+  - ***Affordcast*** ([GitHub](https://github.com/Western-Artificial-Intelligence/condo-cost-predictor)) – Toronto Condo-Affordability Forecaster with `XGBoost`, `LightGBM`, and `scikit-learn` 
+  - ***CodeBuster*** ([GitHub](https://github.com/Western-Artificial-Intelligence/codesim-detector)) – Code-similarity Detector with `CodeBERT` and `scikit-learn` 
 
 ---
 
