@@ -7,17 +7,10 @@
 ### 🔭 What I'm doing
 
 #### 🌎 PlanCatalyst Global Development Data Dashboard
-My main project right now is building an interactive web-dashboard ([GitHub](https://github.com/LlamzonAmazon/PC-Data-Dash)) for the *PlanCatalyst Organization* ([Website](https://www.plancatalyst.org)) which forecasts country development with regression modelling on:
- - human rights growth (UN SDGs),
- - climate change resilience (ND-GAIN),
- - and financial capacity (World Bank data).
-
-I'm building my skills with **ML tools/frameworks** and **Amazon Web Services (AWS)** with this project. The dashboard improves PlanCatalyst's stakeholders' trust and perception of their data-driven decision-making capabilities, helping the organization grow their international impact.
+My main project right now is building an interactive web-dashboard ([GitHub](https://github.com/LlamzonAmazon/PC-Data-Dash)) for ([*PlanCatalyst*](https://www.plancatalyst.org)), an international non-profit, that forecasts country development with regression modelling on public development indicator data. I'm building my skills with **ML tools/frameworks** and **Cloud Computing Platforms** (Azure) with this project.
 
 #### 🛜 Optimizing Federated Learning Networks for IoT Health Devices
-I am also completing my thesis, titled: 
-
-*Asynchronous Shallow-Deep Layer Split Updates for More Efficient Federated Learning Networks in IoT Health Devices*
+I am also completing my thesis, titled: *Asynchronous Weight-Updating Federated Learning Networks for Improved Communication Efficiency in IoT Health Devices*
  
 #### 📡 Part-Time Cybersecurity Analyst (SOC)
 I'm in in the **cybersecurity** field as an analyst, and I'm looking to bridge this experience with my skills in **software development** and passion for **cloud systems**.
