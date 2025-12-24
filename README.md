@@ -26,4 +26,4 @@ I am also involved in Western's largest tech club where I oversee four distinct 
 
 ### 🌐 Connect With Me
 
-[![Portfolio](https://img.shields.io/badge/%20Website-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://llamzon.ca) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/thomasllamzon)
+[![Portfolio](https://img.shields.io/badge/%20Website-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://llamzon.ca) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thomasllamzon)
