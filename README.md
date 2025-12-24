@@ -7,7 +7,7 @@
 ### 🔭 What I'm doing
 
 #### 🌎 PlanCatalyst Global Development Data Dashboard
-My main project right now is building an interactive web-dashboard ([GitHub](https://github.com/LlamzonAmazon/PC-Data-Dash)) for ([*PlanCatalyst*](https://www.plancatalyst.org)), an international non-profit, that forecasts country development with regression modelling on public development indicator data. I'm building my skills with **ML tools/frameworks** and **Cloud Computing Platforms** (Azure) with this project.
+My main project right now is building an interactive web-dashboard ([GitHub](https://github.com/LlamzonAmazon/PC-Data-Dash)) for [***PlanCatalyst***](https://www.plancatalyst.org), an international non-profit, that forecasts country development with regression modelling on public development indicator data. I'm building my skills with **ML tools/frameworks** and **Cloud Computing Platforms** (Azure) with this project.
 
 #### 🛜 Optimizing Federated Learning Networks for IoT Health Devices
 I am also completing my thesis, titled: *Asynchronous Weight-Updating Federated Learning Networks for Improved Communication Efficiency in IoT Health Devices*
