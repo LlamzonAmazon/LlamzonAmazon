@@ -6,7 +6,7 @@
 
 ### 🔭 What I'm doing
 #### 🌎 Global Development Data Dashboard for the [PlanCatalyst](https://www.plancatalyst.org) Organization ([GitHub](https://github.com/LlamzonAmazon/PC-Data-Dash)) 
-#### 🛜 Thesis: *Applying Asynchronous Weight-Updating to Federated Learning Neural Networks for IoT Healthcare Devices* ([GitHub](https://github.com/LlamzonAmazon/))
+#### 🛜 Thesis: *Applying Asynchronous Weight-Updating to Federated Learning Neural Networks for IoT Healthcare Devices* ([GitHub](https://github.com/LlamzonAmazon/asynchronous-fl))
 #### 📡 Part-Time **Cybersecurity Analyst (SOC)**
 #### 🤖 **Vice President of Projects** @ Western AI
   - ***Shotgun Guardian*** ([GitHub](https://github.com/Western-Artificial-Intelligence/realtime-drowsiness-detector)) – Driver Drowsiness Detector with `OpenCV`,`YOLOv8n`, and `PyTorch`
