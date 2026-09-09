@@ -2,13 +2,14 @@
 ## Education
 - BSc, Honours Specialization in Computer Science – Western Univeristy 
 ## What I'm Building 
+*I do freelance/FDE work for individual clients. Building towards SaaS/GaaS as I acquire more clients.*
 - **Inventory management agent** and **online ordering infrastructure** for **Food & Beverage**. Core Efforts:
   - Tenant isolation model,
   - per-user identity and audit layer,
   - Cloudflare Access gated CI/CD,
   - cross-platform inventory change propogation pipeline (_Website, Toast, Uber Eats, DoorDash_)
 - **Automated patient follow-up and scheduling platform** using PMS (_Tracker, Jane_) patient logs and appointment data for **Dental, Physio, Chiro, and RMT Practices**. Core Efforts:
-  - Tenancy model,
+  - Tenant isolation model,
   - Entra/Google SSO with allowlist gating,
   - PMS ingest architecture,
   - PHI security & compliance model
