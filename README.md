@@ -1,10 +1,23 @@
 # Thomas Llamzon
-_Building software that matters._
 ## Education
-BSc, Honours Specialization in Computer Science – Western Univeristy
-## About Me 
-- Building tailored **agentic/automated solutions** for growing businesses
-- Applied work experience in **cybersecurity** (SOC) and **cloud computing**
-- Academic background in building efficient **data structures and algorithms** for enterprise systems
+- BSc, Honours Specialization in Computer Science – Western Univeristy 
+## What I'm Building 
+- **Inventory management agent** and **online ordering infrastructure** for **Food & Beverage**. Core Efforts:
+  - Tenant isolation model,
+  - per-user identity and audit layer,
+  - Cloudflare Access gated CI/CD,
+  - cross-platform inventory change propogation pipeline (_Website, Toast, Uber Eats, DoorDash_)
+- **Automated patient follow-up and scheduling platform** using PMS (_Tracker, Jane_) patient logs and appointment data for **Dental, Physio, Chiro, and RMT Practices**. Core Efforts:
+  - Tenancy model,
+  - Entra/Google SSO with allowlist gating,
+  - PMS ingest architecture,
+  - PHI security & compliance model
+## My Qualifications
+- Applied experience in **cybersecurity** (SOC) and software engineering
+- Academic background in
+  - Databases
+  - Networking & Security
+  - Data Structures & Algorithms
+- **First-Name Author** in **IEEE GLOBECOM 2026** Paper: [_Asynchronous Layer-Wise Weight Updating for Communication-Efficient Federated Learning in IoT Health Devices_](https://github.com/LlamzonAmazon/asynchronous-fl/tree/main)
 ## Connect
 [![Portfolio](https://img.shields.io/badge/%20Website-0A66C2?style=for-the-badge&logo=google-chrome&logoColor=white)](https://llamzon.ca) [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/thomasllamzon)
