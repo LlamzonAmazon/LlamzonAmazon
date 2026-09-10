@@ -2,7 +2,7 @@
 ## Education
 - BSc, Honours Specialization in Computer Science – Western Univeristy 
 ## What I'm Building 
-*I do freelance/FDE work for individual clients. Building towards SaaS/GaaS as I acquire more clients.*
+*I build internal production agents and software as freelance/FDE for individual clients. Building towards SaaS/GaaS as I acquire more clients.*
 - **Inventory management agent** and **online ordering infrastructure** for **Food & Beverage**. Core Efforts:
   - Tenant isolation model,
   - per-user identity and audit layer,
