@@ -14,7 +14,9 @@
   - PMS ingest architecture,
   - PHI security & compliance model
 ## My Qualifications
-- Applied work experience in **cybersecurity** (Blue-team SOC) and **software engineering** (Full-stack, Cloud, Data, ML)
+- Applied work experience in:
+  - **Cybersecurity** (Blue-team SOC)
+  - **Software engineering** (Full-stack, Cloud, Data, ML)
 - Academic background in
   - Databases
   - Networking & Security
