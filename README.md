@@ -10,7 +10,7 @@
   <a href="https://llamzon.ca"><img src="https://img.shields.io/badge/Website-0A66C2?style=flat&logo=googlechrome&logoColor=white" /></a>
   <a href="https://www.linkedin.com/in/thomasllamzon"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" /></a>
   <a href="https://github.com/LlamzonAmazon"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/LlamzonAmazon/asynchronous-fl"><img src="https://img.shields.io/badge/IEEE_GLOBECOM_2026-First_author-00629B?style=flat&logo=ieee&logoColor=white" /></a>
+  <a href="https://github.com/LlamzonAmazon/asynchronous-fl/blob/main/paper/main-conference.pdf"><img src="https://img.shields.io/badge/IEEE_GLOBECOM_2026-First_author-00629B?style=flat&logo=ieee&logoColor=white" /></a>
 </p>
 
 <p align="center"><em>Building internal production F&B Business Agents as an independent FDE. Interested in Cybersecurity, Full-Stack, and GTM Engineering.</em></p>
