@@ -1,98 +1,58 @@
-<h1 align="center">Thomas Llamzon</h1>
-
 <p align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=600&lines=Security+%2B+Full-Stack+Engineer;Freelance+%2F+FDE;BSc+Honours+CS%2C+Western+University" alt="Typing SVG" />
-  </a>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg"><img src="assets/header-light.svg" alt="Terminal card: thomas@llamzon, Forward Deployed Engineer, security and full-stack, BSc Honours CS at Western University, first-author IEEE GLOBECOM 2026" width="100%"></picture>
 </p>
 
-<p align="center">
-  <a href="https://llamzon.ca"><img src="https://img.shields.io/badge/Website-0A66C2?style=flat&logo=googlechrome&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/thomasllamzon"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" /></a>
-  <a href="https://github.com/LlamzonAmazon"><img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white" /></a>
-  <a href="https://github.com/LlamzonAmazon/asynchronous-fl/blob/main/paper/main-conference.pdf"><img src="https://img.shields.io/badge/IEEE_GLOBECOM_2026-First_author-00629B?style=flat&logo=ieee&logoColor=white" /></a>
+<p>
+  <a href="https://llamzon.ca"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/buttons/website-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/buttons/website-light.svg"><img src="assets/buttons/website-light.svg" alt="Website"></picture></a>
+  <a href="https://www.linkedin.com/in/thomasllamzon"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/buttons/linkedin-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/buttons/linkedin-light.svg"><img src="assets/buttons/linkedin-light.svg" alt="LinkedIn"></picture></a>
+  <a href="https://github.com/LlamzonAmazon/asynchronous-fl/blob/main/paper/main-conference.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/buttons/paper-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/buttons/paper-light.svg"><img src="assets/buttons/paper-light.svg" alt="IEEE GLOBECOM 2026 paper"></picture></a>
 </p>
 
-<p align="center"><em>Building internal production F&B Business Agents as an independent FDE. Interested in Cybersecurity, Full-Stack, and GTM Engineering.</em></p>
+Production AI agents for food and beverage operators, built with a SOC analyst's habits: access control, audit trails and data boundaries from day one.
 
----
+## Now
 
-## What I'm Doing
+**Trellum**: agent platform for an F&B operator, in beta
 
-- Built a production **business agent platform** for a **Food & Beverage** client that helps with **Inventory Optimization** and **Growth (RevOps, Outbound)**
-  - **Isolated per-tenant agents** with per-user identity (TOTP, revocable sessions, full audit trail) behind Cloudflare Access gated CI/CD
-  - **Local-model privacy boundary:** tenant data stays on a self-hosted model, cloud fallback disabled and enforced in CI
-  - **Live POS and inventory grounding:** the agent reads Toast and supplier data on demand, drafts orders and operational changes, the owner approves
-- Learning about GTM Engineering and how I can apply my SWE background to build enterprise GTM Systems
-  - Built an automated client sourcing, scoring, and outreach agent platform with [Ministral 3](Mistral.ai) models to derive clients and infer `fit x intent` from public SLED agency documents (meeting minutes, agendas, etc.)
-  - Model compute hosted on [Modal AI](Modal.com)
-  - Project codebase is lives in a private repo currently
+- Isolated agent per tenant, with per-user identity: TOTP, revocable sessions, audit trail
+- Tenant data stays on a self-hosted model; cloud fallback is off and enforced in CI
+- Reads Toast POS and supplier data, drafts orders, the owner approves
 
----
+**GTM engineering**: private
 
-### Background
+- Sources and scores public-sector leads, infers `fit x intent` from agency documents
+- Ministral 3 models on [Modal](https://modal.com)
 
-- Applied work experience in:
-  - **Cybersecurity** (blue-team SOC)
-  - **Software engineering** (full-stack, cloud, data, ML)
-- Academic background in:
-  - **Databases**
-  - **Security** and **Networking**
-  - **Data Structures** and **Algorithms**
-- **Published First-name author**, **IEEE GLOBECOM 2026**: [_Asynchronous Layer-Wise Weight Updating for Communication-Efficient Federated Learning in IoT Health Devices_](https://github.com/LlamzonAmazon/asynchronous-fl/tree/main)
+## Selected work
 
----
+| Project | What it does | Result |
+| --- | --- | --- |
+| **[StackWatch](https://github.com/LlamzonAmazon/StackWatch)**<br>`Python` `FastAPI` `ClickHouse` `Semgrep` | Exposure agent. Point it at a domain or repo and it reports what the target runs, which vulnerabilities apply, and which are reachable | Four-rung evidence ladder on every finding: present, reachable, exploitable, confirmed |
+| **[Asynchronous Federated Learning](https://github.com/LlamzonAmazon/asynchronous-fl)**<br>`Python` `PyTorch` `Flower` | Layer-wise asynchronous updates for federated learning on health IoT devices. Tested on a 37M-parameter ECG model | **49.7% less client upload**, accuracy 83.2% vs 82.7% for synchronous (3 seeds, p = 0.31) |
+| **[Country Development Scoring](https://github.com/PlanCatalyst/TSI-Data-Dashboard)**<br>`Python` `React` `D3` `Azure` | 216 countries, 28 indicators, 35 years, 7 pillars. A Python pipeline publishes to Azure Blob and a React app reads it | **97,038 of 97,038** published values re-derived independently, all matched |
+| **[Western Sales Club site and CMS](https://westernsalesclub.ca)**<br>`Next.js` `TypeScript` `Supabase` | Live site and CMS for a student organization. Its executives publish events and sponsors without a developer | **TOTP** enforced in Postgres policies on every admin write |
 
-## Projects
+> [!NOTE]
+> StackWatch began as a team build at the SF Tech Week Cyberdefense Hackathon and continued solo. The federated learning work is my thesis, a first-author paper at IEEE GLOBECOM 2026 (Macau, December).
 
-| Project | What it is | Stack |
-|---|---|---|
-| **[StackWatch (AWS Cyberdefense Hackathon SFTW 2026)](https://github.com/LlamzonAmazon/StackWatch)** | Business-specific threat intelligence agent. Inventories a target domain's tech stack, matches advisories (OSV, NVD, KEV, EPSS) and proves or rules out reachability with Semgrep and scoped runtime checks | Python · FastAPI · ClickHouse · Semgrep |
-| **[Asynchronous FL (Thesis)](https://github.com/LlamzonAmazon/asynchronous-fl)** | Asynchronous layer-wise weight updating to cut communication cost in federated learning across health IoT devices. First-author paper accepted at IEEE GLOBECOM 2026, presenting December 2026 | Python · PyTorch · Flower |
-| **[PlanCatalyst Global Country Development Scoring Dashboard](https://github.com/PlanCatalyst/TSI-Data-Dashboard)** | Country-level development-need scoring across a 7-pillar data model. Python ETL pipeline publishes to Azure Blob, a React dashboard embedded in the client's Wix site reads it. Built for PlanCatalyst, delivered solo | Python · React · Azure |
+## Background
 
----
+- **Security Analyst, CYBERWELL** (Apr 2025 to Apr 2026): on call across 7 client tenants, wrote KQL detections, resolved 8+ incidents a day, cut false positives 12%
+- **Software Engineer, PlanCatalyst** (Sep 2025 to Apr 2026): built the ingestion pipeline, scoring and publish path for the scoring engine
+- **BSc Honours, Computer Science, Western University** (2026): databases, networking, security, algorithms
 
-## Tech stack
+## Tools
 
-**Languages**
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white)
+| Area | Tools |
+| --- | --- |
+| Languages | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/python-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/python-light.svg"><img src="assets/labels/python-light.svg" alt="Python"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/typescript-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/typescript-light.svg"><img src="assets/labels/typescript-light.svg" alt="TypeScript"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/sql-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/sql-light.svg"><img src="assets/labels/sql-light.svg" alt="SQL"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/bash-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/bash-light.svg"><img src="assets/labels/bash-light.svg" alt="Bash"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/kql-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/kql-light.svg"><img src="assets/labels/kql-light.svg" alt="KQL"></picture> |
+| Backend and data | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/fastapi-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/fastapi-light.svg"><img src="assets/labels/fastapi-light.svg" alt="FastAPI"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/nodejs-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/nodejs-light.svg"><img src="assets/labels/nodejs-light.svg" alt="Node.js"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/postgresql-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/postgresql-light.svg"><img src="assets/labels/postgresql-light.svg" alt="PostgreSQL"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/clickhouse-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/clickhouse-light.svg"><img src="assets/labels/clickhouse-light.svg" alt="ClickHouse"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/supabase-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/supabase-light.svg"><img src="assets/labels/supabase-light.svg" alt="Supabase"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/pandas-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/pandas-light.svg"><img src="assets/labels/pandas-light.svg" alt="pandas"></picture> |
+| Frontend | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/react-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/react-light.svg"><img src="assets/labels/react-light.svg" alt="React"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/nextjs-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/nextjs-light.svg"><img src="assets/labels/nextjs-light.svg" alt="Next.js"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/vite-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/vite-light.svg"><img src="assets/labels/vite-light.svg" alt="Vite"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/tailwind-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/tailwind-light.svg"><img src="assets/labels/tailwind-light.svg" alt="Tailwind"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/d3-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/d3-light.svg"><img src="assets/labels/d3-light.svg" alt="D3"></picture> |
+| Cloud and infra | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/cloudflare-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/cloudflare-light.svg"><img src="assets/labels/cloudflare-light.svg" alt="Cloudflare"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/aws-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/aws-light.svg"><img src="assets/labels/aws-light.svg" alt="AWS"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/azure-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/azure-light.svg"><img src="assets/labels/azure-light.svg" alt="Azure"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/terraform-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/terraform-light.svg"><img src="assets/labels/terraform-light.svg" alt="Terraform"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/docker-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/docker-light.svg"><img src="assets/labels/docker-light.svg" alt="Docker"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/actions-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/actions-light.svg"><img src="assets/labels/actions-light.svg" alt="GitHub Actions"></picture> |
+| Security and AI | <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/semgrep-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/semgrep-light.svg"><img src="assets/labels/semgrep-light.svg" alt="Semgrep"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/sentinel-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/sentinel-light.svg"><img src="assets/labels/sentinel-light.svg" alt="Sentinel"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/entra-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/entra-light.svg"><img src="assets/labels/entra-light.svg" alt="Entra ID"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/claude-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/claude-light.svg"><img src="assets/labels/claude-light.svg" alt="Claude"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/ollama-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/ollama-light.svg"><img src="assets/labels/ollama-light.svg" alt="Ollama"></picture> <picture><source media="(prefers-color-scheme: dark)" srcset="assets/labels/pytorch-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/labels/pytorch-light.svg"><img src="assets/labels/pytorch-light.svg" alt="PyTorch"></picture> |
 
-**Cloud & Infra**
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=flat&logo=microsoftazure&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=flat&logo=terraform&logoColor=white)
+## DSA practice
 
-**Backend & Data**
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![ClickHouse](https://img.shields.io/badge/ClickHouse-FFCC01?style=flat&logo=clickhouse&logoColor=black)
+NeetCode 150 and LeetCode. The card rebuilds itself from the [solutions repo](https://github.com/LlamzonAmazon/DSA-Problems) on every push.
 
-**Frontend**
-![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=nextdotjs&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=flat&logo=tailwindcss&logoColor=white)
-
-**Security & AI**
-![Semgrep](https://img.shields.io/badge/Semgrep-1B1B1B?style=flat&logo=semgrep&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude-D97757?style=flat&logo=anthropic&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white)
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LlamzonAmazon&layout=compact&theme=github_dark&hide_border=true&langs_count=6" />
-</p>
-
----
-
-
-
-
-
+<a href="https://github.com/LlamzonAmazon/DSA-Problems"><img src="https://raw.githubusercontent.com/LlamzonAmazon/DSA-Problems/main/assets/dsa-progress.svg" alt="DSA progress: NeetCode 150 and LeetCode solved counts" width="760"></a>
