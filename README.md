@@ -10,7 +10,7 @@
 
 ## Current Projects
 
-**Trellum**: Agent platform for an F&B operator `IN BETA`
+**[Trellum](https://trellum.ca)**: Agent platform for an F&B operator `IN BETA`
 
 - Isolated agent per tenant, with per-user identity: TOTP, revocable sessions, audit trail
 - Tenant data stays on a self-hosted model; cloud fallback is off and enforced in CI
