@@ -73,7 +73,7 @@ def header(mode):
         ("user",), ("sep",),
         ("kv", "Role", "Software Engineer"),
         ("kv", "Focus", "Security, Agents, Full-Stack"),
-        ("kv", "Education", "Honours Computer Science (BSc), Western University"),
+        ("kv", "Education", "BSc Honours CS, Western University"),
         ("kv", "Languages", "Python, TypeScript, SQL"),
         ("kv", "Infra", "Cloudflare, AWS, Azure"),
         ("kv", "Published", "IEEE GLOBECOM 2026, first author"),
