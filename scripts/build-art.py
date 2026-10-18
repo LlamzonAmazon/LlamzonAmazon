@@ -3,15 +3,13 @@
 
     python3 scripts/build-art.py
 
-Everything here is a replica of a GitHub (Primer) component, in GitHub's own
-colours and the README font stack:
+Square corners everywhere: no asset uses a corner radius.
 
-  header-*.svg          a code block, styled like GitHub's <pre>
-  buttons/*.svg         Primer secondary buttons
-  labels/*.svg          Primer labels (accent, success, done, severe, danger)
+  header-*.svg          a code block, in GitHub's code block colours
+  badges/*.svg          flat badges, brand colour and icon per tool
 
-Dark and light variants are written side by side and chosen in the README with
-<picture>. Headings, tables, lists, rules and notes are plain markdown, so
+The header has dark and light variants chosen in the README with <picture>;
+badges are one file each. Headings, tables, lists, rules and notes are plain markdown, so
 GitHub renders them itself. The header types in once and the cursor blinks;
 nothing else animates, and prefers-reduced-motion turns that off.
 """
@@ -33,15 +31,6 @@ PRIMER = {
     "canvas-muted": ("#f6f8fa", "#151b23"),   # code block background
     "fg": ("#1f2328", "#f0f6fc"),
     "fg-muted": ("#59636e", "#9198a1"),
-    "btn-bg": ("#f6f8fa", "#212830"),
-    "btn-border": ("#d1d9e0", "#3d444d"),
-    "btn-fg": ("#25292e", "#f0f6fc"),
-    # label variants: (border light, border dark, text light, text dark)
-    "accent": ("#0969da", "#1f6feb", "#0969da", "#4493f8"),
-    "success": ("#1f883d", "#238636", "#1a7f37", "#3fb950"),
-    "done": ("#8250df", "#8957e5", "#8250df", "#ab7df8"),
-    "severe": ("#bc4c00", "#bd561d", "#bc4c00", "#db6d28"),
-    "danger": ("#cf222e", "#da3633", "#d1242f", "#f85149"),
 }
 # Primer text colours, used for the header's accents and colour swatches
 SWATCH = {
@@ -109,7 +98,7 @@ def header(mode):
         "</style>\n"
         f'<defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="{ax}" y1="{ay}" x2="{ax + art_w}" y2="{ay + art_h}">'
         f'<stop offset="0" stop-color="{green}"/><stop offset="1" stop-color="{blue}"/></linearGradient></defs>\n'
-        f'<rect width="{W}" height="{H}" rx="6" fill="{bg}"/>\n'
+        f'<rect width="{W}" height="{H}" fill="{bg}"/>\n'
     ]
 
     # typed command
@@ -164,7 +153,7 @@ def header(mode):
         elif kind == "swatch":
             o.append(f'<g class="f" style="animation-delay:{d:.2f}s">')
             for j, name in enumerate(["green", "blue", "purple", "yellow", "orange", "red", "pink"]):
-                o.append(f'<rect x="{rx + j * 19}" y="{y - 11:.1f}" width="14" height="14" rx="2" fill="{sw(name, mode)}"/>')
+                o.append(f'<rect x="{rx + j * 19}" y="{y - 11:.1f}" width="14" height="14" fill="{sw(name, mode)}"/>')
             o.append("</g>\n")
         y += step
 
@@ -178,75 +167,82 @@ def header(mode):
     write(OUT / f"header-{mode}.svg", "".join(o))
 
 
-# ---------------------------------------------------------------- Primer buttons
+# ---------------------------------------------------------------- flat badges
 
-# slug, label, icon source: ("octicon", name) or ("simple", name)
-BUTTONS = [
-    ("website", "Website", ("octicon", "globe-16")),
-    ("linkedin", "LinkedIn", ("simple", "linkedin")),
-    ("paper", "IEEE GLOBECOM 2026 paper", ("octicon", "book-16")),
+def lum(hex_):
+    r, g, bl = [int(hex_[i:i + 2], 16) / 255 for i in (1, 3, 5)]
+    f = lambda v: v / 12.92 if v <= 0.03928 else ((v + 0.055) / 1.055) ** 2.4
+    return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(bl)
+
+
+def contrast(a, b):
+    la, lb = sorted([lum(a), lum(b)], reverse=True)
+    return (la + 0.05) / (lb + 0.05)
+
+
+# slug, label, brand colour, simple-icons slug or None
+BADGES = [
+    ("website", "Website", "#14b8a6", None),
+    ("linkedin", "LinkedIn", "#0A66C2", "linkedin"),
+    ("paper", "IEEE GLOBECOM 2026 paper", "#00629B", None),
+    ("python", "Python", "#3776AB", "python"),
+    ("typescript", "TypeScript", "#3178C6", "typescript"),
+    ("sql", "SQL", "#336791", "postgresql"),
+    ("bash", "Bash", "#4EAA25", "gnubash"),
+    ("kql", "KQL", "#0078D4", None),
+    ("fastapi", "FastAPI", "#009688", "fastapi"),
+    ("nodejs", "Node.js", "#339933", "nodedotjs"),
+    ("postgresql", "PostgreSQL", "#4169E1", "postgresql"),
+    ("clickhouse", "ClickHouse", "#FFCC01", "clickhouse"),
+    ("supabase", "Supabase", "#3FCF8E", "supabase"),
+    ("pandas", "pandas", "#150458", "pandas"),
+    ("react", "React", "#61DAFB", "react"),
+    ("nextjs", "Next.js", "#000000", "nextdotjs"),
+    ("vite", "Vite", "#646CFF", "vite"),
+    ("tailwind", "Tailwind", "#06B6D4", "tailwindcss"),
+    ("d3", "D3", "#F9A03C", "d3dotjs"),
+    ("cloudflare", "Cloudflare", "#F38020", "cloudflare"),
+    ("aws", "AWS", "#232F3E", "amazonwebservices"),
+    ("azure", "Azure", "#0078D4", None),
+    ("terraform", "Terraform", "#844FBA", "terraform"),
+    ("docker", "Docker", "#2496ED", "docker"),
+    ("actions", "GitHub Actions", "#2088FF", "githubactions"),
+    ("semgrep", "Semgrep", "#1FC5A4", None),
+    ("sentinel", "Sentinel", "#0078D4", None),
+    ("entra", "Entra ID", "#0078D4", None),
+    ("claude", "Claude", "#D97757", "claude"),
+    ("ollama", "Ollama", "#FFFFFF", "ollama"),
+    ("pytorch", "PyTorch", "#EE4C2C", "pytorch"),
 ]
 
 
-def icon_path(kind, name):
-    if kind == "octicon":
-        return re.search(r'<path d="([^"]+)"', (DATA / "octicons" / f"{name}.svg").read_text()).group(1), 16
-    return re.search(r'<path d="([^"]+)"', (DATA / "icons" / f"{name}.svg").read_text()).group(1), 24
-
-
-def button(slug, label, icon, mode):
-    """Primer secondary button: 32px tall, 12px padding, 6px radius, 14px / 500 text, 16px icon."""
-    bg, border, fg = pv("btn-bg", mode), pv("btn-border", mode), pv("btn-fg", mode)
-    d, native = icon_path(*icon)
-    tw = len(label) * 7.6 + 2  # estimate for the README font at 14px / 500; text is not pinned
-    w = int(12 + 16 + 8 + tw + 12)
-    scale = 16 / native
-    o = (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="32" viewBox="0 0 {w} 32" role="img" aria-label="{escape(label)}">\n'
-        f'<rect x=".5" y=".5" width="{w - 1}" height="31" rx="6" fill="{bg}" stroke="{border}"/>\n'
-        f'<path transform="translate(12 8) scale({scale})" fill="{fg}" d="{d}"/>\n'
-        f'<text x="36" y="21" font-family="{SANS}" font-size="14" font-weight="500" fill="{fg}">{escape(label)}</text>\n</svg>\n'
+def badge(slug, label, color, icon):
+    """28px flat badge: square corners, brand colour, optional icon, uppercase tracked text in the README font."""
+    fg = "#ffffff" if contrast(color, "#ffffff") >= contrast(color, "#000000") else "#000000"
+    text = label.upper()
+    cw = 8.4  # pinned advance per character at 11px bold with 1.2px tracking
+    tw = len(text) * cw
+    icon_w = 24 if icon else 0
+    w = int(12 + icon_w + tw + 12)
+    d = None
+    if icon:
+        d = re.search(r'<path d="([^"]+)"', (DATA / "icons" / f"{icon}.svg").read_text()).group(1)
+    o = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="28" viewBox="0 0 {w} 28" role="img" aria-label="{escape(label)}">\n',
+        f'<rect x=".5" y=".5" width="{w - 1}" height="27" fill="{color}" stroke="#808080" stroke-opacity=".35"/>\n',
+    ]
+    if d:
+        o.append(f'<path transform="translate(12 7) scale(.5833)" fill="{fg}" d="{d}"/>\n')
+    o.append(
+        f'<text x="{12 + icon_w}" y="18" font-family="{SANS}" font-size="11" font-weight="700" letter-spacing="1.2" '
+        f'fill="{fg}" textLength="{tw:.1f}" lengthAdjust="spacing">{escape(text)}</text>\n</svg>\n'
     )
-    write(OUT / "buttons" / f"{slug}-{mode}.svg", o)
-
-
-# ---------------------------------------------------------------- Primer labels
-
-# slug, text, variant. The variant is chosen per tool group.
-LABELS = [
-    ("python", "Python", "accent"), ("typescript", "TypeScript", "accent"), ("sql", "SQL", "accent"),
-    ("bash", "Bash", "accent"), ("kql", "KQL", "accent"),
-    ("fastapi", "FastAPI", "success"), ("nodejs", "Node.js", "success"), ("postgresql", "PostgreSQL", "success"),
-    ("clickhouse", "ClickHouse", "success"), ("supabase", "Supabase", "success"), ("pandas", "pandas", "success"),
-    ("react", "React", "done"), ("nextjs", "Next.js", "done"), ("vite", "Vite", "done"),
-    ("tailwind", "Tailwind", "done"), ("d3", "D3", "done"),
-    ("cloudflare", "Cloudflare", "severe"), ("aws", "AWS", "severe"), ("azure", "Azure", "severe"),
-    ("terraform", "Terraform", "severe"), ("docker", "Docker", "severe"), ("actions", "GitHub Actions", "severe"),
-    ("semgrep", "Semgrep", "danger"), ("sentinel", "Sentinel", "danger"), ("entra", "Entra ID", "danger"),
-    ("claude", "Claude", "danger"), ("ollama", "Ollama", "danger"), ("pytorch", "PyTorch", "danger"),
-]
-
-
-def label(slug, text, variant, mode):
-    """Primer Label: 20px tall, 7px side padding, 1px border in the emphasis colour, 12px / 500 text, pill radius."""
-    bl, bd, tl, td = PRIMER[variant]
-    border = bl if mode == "light" else bd
-    color = tl if mode == "light" else td
-    tw = len(text) * 6.9 + 1  # estimate for the README font at 12px / 500
-    w = int(7 + tw + 7 + 2)
-    o = (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="20" viewBox="0 0 {w} 20" role="img" aria-label="{escape(text)}">\n'
-        f'<rect x=".5" y=".5" width="{w - 1}" height="19" rx="9.5" fill="none" stroke="{border}"/>\n'
-        f'<text x="{w / 2:.1f}" y="14" text-anchor="middle" font-family="{SANS}" font-size="12" font-weight="500" fill="{color}">{escape(text)}</text>\n</svg>\n'
-    )
-    write(OUT / "labels" / f"{slug}-{mode}.svg", o)
+    write(OUT / "badges" / f"{slug}.svg", "".join(o))
 
 
 if __name__ == "__main__":
     for m in ("dark", "light"):
         header(m)
-        for b in BUTTONS:
-            button(*b, m)
-        for l in LABELS:
-            label(*l, m)
+    for b in BADGES:
+        badge(*b)
     print(f"wrote {len(list(OUT.rglob('*.svg')))} svgs to {OUT}")
