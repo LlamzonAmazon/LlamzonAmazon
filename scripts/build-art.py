@@ -71,10 +71,9 @@ def header(mode):
     step = 15.5
     rows = [
         ("user",), ("sep",),
-        ("kv", "Role", "Forward Deployed Engineer"),
-        ("kv", "Focus", "production AI agents, F&B operators"),
-        ("kv", "Background", "blue-team SOC, then full-stack"),
-        ("kv", "Education", "BSc Honours CS, Western University"),
+        ("kv", "Role", "Software Engineer"),
+        ("kv", "Focus", "Security, Agents, Full-Stack"),
+        ("kv", "Education", "Honours Computer Science (BSc), Western University"),
         ("kv", "Languages", "Python, TypeScript, SQL"),
         ("kv", "Infra", "Cloudflare, AWS, Azure"),
         ("kv", "Published", "IEEE GLOBECOM 2026, first author"),

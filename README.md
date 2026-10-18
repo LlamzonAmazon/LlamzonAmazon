@@ -1,5 +1,5 @@
 <p align="center">
-  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg"><img src="assets/header-light.svg" alt="Terminal card: Thomas Llamzon, Forward Deployed Engineer, AI, Security, Full-stack, Honours Computer Science (BSc) at Western University, first-author IEEE GLOBECOM 2026" width="100%"></picture>
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/header-light.svg"><img src="assets/header-light.svg" alt="Terminal card: Thomas Llamzon, Software Engineer, Security, Agents, Full-Stack, Honours Computer Science (BSc) at Western University, first-author IEEE GLOBECOM 2026" width="100%"></picture>
 </p>
 
 <p>
