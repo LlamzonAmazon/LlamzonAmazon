@@ -8,20 +8,18 @@
   <a href="https://github.com/LlamzonAmazon/asynchronous-fl/blob/main/paper/main-conference.pdf"><img src="assets/badges/paper.svg" alt="IEEE GLOBECOM 2026 paper"></a>
 </p>
 
-Production AI agents for food and beverage operators, built with a SOC analyst's habits: access control, audit trails and data boundaries from day one.
+## Current Projects
 
-## Now
-
-**Trellum**: agent platform for an F&B operator, in beta
+**Trellum**: Agent platform for an F&B operator `IN BETA`
 
 - Isolated agent per tenant, with per-user identity: TOTP, revocable sessions, audit trail
 - Tenant data stays on a self-hosted model; cloud fallback is off and enforced in CI
 - Reads Toast POS and supplier data, drafts orders, the owner approves
 
-**GTM engineering**: private
+**Learning GTM Engineering**
 
-- Sources and scores public-sector leads, infers `fit x intent` from agency documents
-- Ministral 3 models on [Modal](https://modal.com)
+- Built a platform that sources and scores public-sector agency leads and infers ICP fit and intent from agency documents
+- Utilizes [Mistral](ttps://mistral.ai/) Ministral 3 models on [Modal](https://modal.com)
 
 ## Selected work
 
@@ -33,13 +31,14 @@ Production AI agents for food and beverage operators, built with a SOC analyst's
 | **[Western Sales Club site and CMS](https://westernsalesclub.ca)**<br>`Next.js` `TypeScript` `Supabase` | Live site and CMS for a student organization. Its executives publish events and sponsors without a developer | **TOTP** enforced in Postgres policies on every admin write |
 
 > [!NOTE]
-> StackWatch began as a team build at the SF Tech Week Cyberdefense Hackathon and continued solo. The federated learning work is my thesis, a first-author paper at IEEE GLOBECOM 2026 (Macau, December).
+> StackWatch began as a team build at the 2026 SF Tech Week Cyberdefense Hackathon, but I continued to build it solo as more of an automated threat-intelligence team.
+> The federated learning work is my thesis. I am the first-author of the paper to be presented at IEEE GLOBECOM 2026 (Macau, December).
 
 ## Background
 
-- **Security Analyst, CYBERWELL** (Apr 2025 to Apr 2026): on call across 7 client tenants, wrote KQL detections, resolved 8+ incidents a day, cut false positives 12%
-- **Software Engineer, PlanCatalyst** (Sep 2025 to Apr 2026): built the ingestion pipeline, scoring and publish path for the scoring engine
-- **BSc Honours, Computer Science, Western University** (2026): databases, networking, security, algorithms
+- **Security Analyst, CYBERWELL** (Apr 2025 to Apr 2026)
+- **Software Engineer, PlanCatalyst (Plan International Canada)** (Sep 2025 to Apr 2026)
+- **BSc Honours, Computer Science, Western University** (2026)
 
 ## Tools
 
