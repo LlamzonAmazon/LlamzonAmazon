@@ -25,7 +25,7 @@
 
 | Project | What it does | Result |
 | --- | --- | --- |
-| **[StackWatch](https://github.com/LlamzonAmazon/StackWatch)**<br>`Python` `FastAPI` `ClickHouse` `Semgrep` | An autonomous threat intelligence agent custom-built for your business. It infers threats from your business model, tech stack and more | Ranks each threat by what it would cost the business, with the evidence behind every finding |
+| **[StackWatch](https://github.com/LlamzonAmazon/StackWatch)**<br>`Python` `FastAPI` `ClickHouse` `Semgrep` | An autonomous threat intelligence agent custom-built for your business. It infers threats from an organization's code, internet footprint and business context | Ranks each threat by what it would cost the business, with the evidence behind every finding |
 | **[Asynchronous Federated Learning](https://github.com/LlamzonAmazon/asynchronous-fl)**<br>`Python` `PyTorch` `Flower` | Layer-wise asynchronous updates for federated learning on health IoT devices. Tested on a 37M-parameter ECG model | **49.7% less client upload**, accuracy 83.2% vs 82.7% for synchronous (3 seeds, p = 0.31) |
 | **[Global Country Development Scoring Engine](https://jolly-pebble-0e2f9300f.7.azurestaticapps.net/#/map)**<br>`Python` `React` `D3` `Azure` | 216 countries, 28 indicators, 35 years, 7 pillars. A Python pipeline publishes to Azure Blob and a React app reads it | **97,053** real values published; the other **114,627** of 211,680 cells are kept as gaps, never scored as zeros |
 | **[Western Sales Club site and CMS](https://westernsalesclub.ca)**<br>`Next.js` `TypeScript` `Supabase` | Live site and CMS for a student organization. Its executives publish events and sponsors without a developer | **TOTP** enforced in Postgres policies on every admin write |
