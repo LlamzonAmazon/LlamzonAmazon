@@ -48,7 +48,7 @@
 | Backend and data | <img src="assets/badges/fastapi.svg" alt="FastAPI"> <img src="assets/badges/nodejs.svg" alt="Node.js"> <img src="assets/badges/postgresql.svg" alt="PostgreSQL"> <img src="assets/badges/clickhouse.svg" alt="ClickHouse"> <img src="assets/badges/supabase.svg" alt="Supabase"> <img src="assets/badges/pandas.svg" alt="pandas"> |
 | Frontend | <img src="assets/badges/react.svg" alt="React"> <img src="assets/badges/nextjs.svg" alt="Next.js"> <img src="assets/badges/vite.svg" alt="Vite"> <img src="assets/badges/tailwind.svg" alt="Tailwind"> <img src="assets/badges/d3.svg" alt="D3"> |
 | Cloud and infra | <img src="assets/badges/cloudflare.svg" alt="Cloudflare"> <img src="assets/badges/aws.svg" alt="AWS"> <img src="assets/badges/azure.svg" alt="Azure"> <img src="assets/badges/terraform.svg" alt="Terraform"> <img src="assets/badges/docker.svg" alt="Docker"> <img src="assets/badges/actions.svg" alt="GitHub Actions"> |
-| Security and AI | <img src="assets/badges/semgrep.svg" alt="Semgrep"> <img src="assets/badges/sentinel.svg" alt="Sentinel"> <img src="assets/badges/entra.svg" alt="Entra ID"> <img src="assets/badges/claude.svg" alt="Claude"> <img src="assets/badges/ollama.svg" alt="Ollama"> <img src="assets/badges/pytorch.svg" alt="PyTorch"> |
+| Security and AI | <img src="assets/badges/semgrep.svg" alt="Semgrep"> <img src="assets/badges/sentinel.svg" alt="Sentinel"> <img src="assets/badges/entra.svg" alt="Entra ID"> <img src="assets/badges/ollama.svg" alt="Ollama"> <img src="assets/badges/pytorch.svg" alt="PyTorch"> |
 
 ## DSA practice
 
