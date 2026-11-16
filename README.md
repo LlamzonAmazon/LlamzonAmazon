@@ -23,7 +23,7 @@
 
 ## Selected work
 
-| Project | What it does | Result |
+| Project | About | Notes |
 | --- | --- | --- |
 | **[Global Country Development Scoring Engine](https://jolly-pebble-0e2f9300f.7.azurestaticapps.net/#/map)**<br>`Python` `Azure` `D3` `React` | Cloud ETL Pipeline ingesting data from 5 public data sources (216 countries, 28 indicators over 35 years creating 7 core development pillars) | **97,053** real values published; the other **114,627** of 211,680 cells are kept as gaps, never scored as zeros |
 | **[Asynchronous Federated Learning](https://github.com/LlamzonAmazon/asynchronous-fl)**<br>`Python` `PyTorch` `Flower` | Layer-wise asynchronous updates for federated learning on health IoT devices. Tested on a 37M-parameter ECG model | **49.7% less client upload**, accuracy 83.2% vs 82.7% for synchronous (3 seeds, p = 0.31) |
